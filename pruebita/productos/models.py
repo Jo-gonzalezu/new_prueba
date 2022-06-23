@@ -22,3 +22,8 @@ class boleta(models.Model):
     cantidadProductos = models.IntegerField()
     total = models.FloatField()
     fecha = models.DateField()
+    
+class usuario(models.Model):
+    correo = models.CharField(max_length=30)
+    password = models.CharField(max_length=30)
+    
