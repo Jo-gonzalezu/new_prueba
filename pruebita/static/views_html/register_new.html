@@ -17,12 +17,12 @@
             <div class="contenedor__todo">
                 <div class="caja__trasera">
                     <div class="caja__trasera-login">
-                        <h3>¿Ya tienes una cuenta?</h3>
+                        <h3>&#191;Ya tienes una cuenta?</h3>
                         <p>Inicia sesi&oacuten para entrar en la p&aacutegina.</p>
-                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                        <button id="btn__iniciar-sesion">Inicia sesi&oacuten</button>
                     </div>
                     <div class="caja__trasera-register">
-                        <h3>A&uacuten no tienes una cuenta?</h3>
+                        <h3>&#191;A&uacuten no tienes una cuenta?</h3>
                         <p>Reg&iacutestrate para que puedas iniciar sesi&oacuten.</p>
                         <button id="btn__registrarse">Reg&iacutestrarse</button>
                     </div>
@@ -31,7 +31,8 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="/resultado/" method="get" id="form" class="formulario__login">
+                    <form action="" method="POST" id="form" class="formulario__login">
+                        {% csrf_token %}
                         <h2>Iniciar Sesi&oacuten</h2>
                         <input type="email" id="emailtext" placeholder="Correo Electronico" required>
                         <input type="password" id="passtext" placeholder="Contrase&ntilde;a" required>
@@ -39,12 +40,12 @@
                     </form>
 
                     <!--Register-->
-                    <form action="/static/views_html/resultado.html" class="formulario__register">
+                    <form action="" class="formulario__register">
                         <h2>Reg&iacutestrarse</h2>
                         <input type="text" placeholder="Nombre completo" required>
                         <input type="email" placeholder="Correo Electronico" required>
                         <input type="text" placeholder="Usuario" required>
-                        <input type="password" placeholder="Contraseña" required>
+                        <input type="password" placeholder="Contrase&ntilde;a" required>
                         <button>Reg&iacutestrarse</button>
                     </form>
                 </div>
@@ -52,7 +53,7 @@
 
         </main>
 
-        <script src="../js/register.js"></script>
+        <script src="{% static 'js/register.js' %}"></script>
 </body>
 </html>
 

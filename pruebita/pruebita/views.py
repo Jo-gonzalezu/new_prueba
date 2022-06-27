@@ -10,7 +10,7 @@ def login(request):
 def resultado(request):
     #mensaje = f'se ha logeado el usuario {request.GET["correo"]}'
     llamadabd = Productos.objects.filter(nombre_icontains="plantita_weed")
-    return render(request,"static/views_html/resulado.html",{'mensaje':mensaje})
+    return render(request,"resultado/",{'mensaje':mensaje})
 
 def inicio(request):
     doc_externo = open("static/index.html")
@@ -51,3 +51,11 @@ def productos(request):
     ctx = Context()       
     documento = plt.render(ctx)
     return HttpResponse(documento)         
+
+def carrito(request):
+    doc_externo = open("static/views_html/carrito.html")
+    plt = Template(doc_externo.read())
+    doc_externo.close()
+    ctx = Context()       
+    documento = plt.render(ctx)
+    return HttpResponse(documento)           

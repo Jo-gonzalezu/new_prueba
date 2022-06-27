@@ -23,7 +23,7 @@
         <!-- Estructura Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Inicio <img class="logo" src="../img/Plantera.webp" /></a>
+                <a class="navbar-brand" href="../index.html">Inicio <img class="logo" src="{% static 'img/Plantera.webp' %}" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
         </nav>
     </header>
     <div>
-        <img src="../img/donacion.jpg" class="d-lg-block w-100 mx-auto">
+        <img src="{% static 'img/donacion.jpg' %}" class="d-lg-block w-100 mx-auto">
     </div>
     <main class="main"></main>
     <div class="container">
@@ -138,15 +138,15 @@
                                         </fieldset>
                                         <label>
                                             <input type="radio" name="pago" value="paypal">Paypal <img
-                                                src="../img/Paypal_logo.png" width="25px">
+                                                src="{% static 'img/Paypal_logo.png' %}" width="25px">
                                         </label>
                                         <label>
                                             <input type="radio" name="pago" value="webpay">Webpay <img
-                                                src="../img/webpay_logo.png" width="25px">
+                                                src="{% static 'img/webpay_logo.png' %}" width="25px">
                                         </label>
                                         <label>
                                             <input type="radio" name="pago" value="mercado">Mercado pago <img
-                                                src="../img/mercado_logo.png" width="25px">
+                                                src="{% static 'img/mercado_logo.png' %}" width="25px">
                                         </label>
                                         </fieldset>
                                         <button class="button1">Pagar</button>

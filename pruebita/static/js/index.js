@@ -4,7 +4,7 @@ const baseDeDatos = [
         id: 1,
         nombre: 'Macetero ladrillo',
         precio: 20990,
-        imagen: '../img/macetas_violeta.jpg'
+        imagen: 'static/img/macetas_violeta.jpg'
     },
     {
         id: 2,

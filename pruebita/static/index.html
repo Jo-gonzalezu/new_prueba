@@ -37,10 +37,10 @@
                             <a class="nav-link active" aria-current="page" href="/registro">Registrarse </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{% static 'views_html\donaciones.html' %}">Fundaci&oacuten </a>
+                            <a class="nav-link active" aria-current="page" href="/fundacion">Fundaci&oacuten </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{% static 'views_html\productos.html' %}">Productos</a>
+                            <a class="nav-link active" aria-current="page" href="/productos">Productos</a>
                         </li>
                     </ul>
                 
@@ -95,19 +95,19 @@
         </div>
     </div>
 
-
+    <h1>HOLA ! {{ user.username | upper }} BIENVENIDO</h1>
 
 
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-            <li class="nav-item"><a href="views/donaciones.html" class="nav-link px-2 text-muted">Fundaci&oacuten</a></li>
-            <li class="nav-item"><a href="views/productos.html" class="nav-link px-2 text-muted">Carrito de compras</a></li>
-            <li class="nav-item"><a href="views/register_new.html" class="nav-link px-2 text-muted">Registro</a></li>
-            <li class="nav-item"><a href="views/seguir.html" class="nav-link px-2 text-muted">Seguimiento</a></li>
+            <li class="nav-item"><a href="{% static 'index.html' %}" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="fundacion/" class="nav-link px-2 text-muted">Fundaci&oacuten</a></li>
+            <li class="nav-item"><a href="carrito/" class="nav-link px-2 text-muted">Carrito de compras</a></li>
+            <li class="nav-item"><a href="login/" class="nav-link px-2 text-muted">Registro</a></li>
+            <li class="nav-item"><a href="seguimiento/" class="nav-link px-2 text-muted">Seguimiento</a></li>
         </ul>
         <p class="text-center text-muted">© Designed by Kenny Castillo - Jorge Gonz&aacutelez - Italo Navarrete, 2022 Company Inc</p>
-        </footer>
+    </footer>
 </body>
 
 </html>
