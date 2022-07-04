@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-from django.contrib.auth.views import logout_then_login,LoginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +28,3 @@ urlpatterns = [
     path('resultado/', views.resultado),
     path('carrito/', views.carrito),
 ]
-
