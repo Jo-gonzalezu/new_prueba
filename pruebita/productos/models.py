@@ -8,6 +8,8 @@ class Productos(models.Model):
     disponible = models.BooleanField()
     fechaIncorporacion = models.DateField()
     correoProveedor = models.EmailField()
+    imagen = models.CharField(max_length=254)
+    precio = models.IntegerField()
 
 class cliente(models.Model):
     rut = models.IntegerField()
@@ -16,6 +18,7 @@ class cliente(models.Model):
     apellidoMa = models.CharField(max_length=30)
     nacimiento = models.DateField()
     correo = models.EmailField()
+    
 
 class boleta(models.Model):
     nroBoleta = models.IntegerField()

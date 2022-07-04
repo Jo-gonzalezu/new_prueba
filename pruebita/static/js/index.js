@@ -4,37 +4,37 @@ const baseDeDatos = [
         id: 1,
         nombre: 'Macetero ladrillo',
         precio: 20990,
-        imagen: 'static/img/macetas_violeta.jpg'
+        imagen: img/macetas_violeta.jpg
     },
     {
         id: 2,
         nombre: 'Fertilizante',
         precio: 14990,
-        imagen: '../img/macetas_regando.jpg'
+        imagen: 'img/macetas_regando.jpg'
     },
     {
         id: 3,
         nombre: 'Cactus',
         precio: 5000,
-        imagen: '../img/macetas_aqua.jpg'
+        imagen: 'img/macetas_aqua.jpg'
     },
     {
         id: 4,
         nombre: 'Ficus',
         precio: 59990,
-        imagen: '../img/planta_ficus.jpg'
+        imagen: 'img/planta_ficus.jpg'
     },
     {
         id: 5,
         nombre: 'Tierra',
         precio: 10990,
-        imagen: '../img/tierra.jpeg'
+        imagen: 'img/tierra.jpeg'
     },
     {
         id: 6,
         nombre: 'Rociador',
         precio: 10990,
-        imagen: '../img/rociador.jpeg'
+        imagen: 'img/rociador.jpeg'
     },
 ];
 

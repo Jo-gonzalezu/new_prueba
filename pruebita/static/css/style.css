@@ -1,5 +1,7 @@
 .body {
   background-color: #D7E4A2;
+  padding: 0px;
+  
 }
 .header{
     position: fixed;
@@ -73,3 +75,4 @@
 .estadoPurpura{
   color:purple;
 }
+

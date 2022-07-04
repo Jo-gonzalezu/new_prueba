@@ -24,8 +24,8 @@ urlpatterns = [
     path('seguimiento/', views.seguimiento),
     path('registro/', views.registro),
     path('fundacion/', views.fundacion),
-    path('productos/', views.productos, name ='productos'),
-    path('login/', LoginView.as_views(template_name='views_html/register_new.html'))
+    path('productos/', views.resultado),
+    path('login/', views.registro),
     path('resultado/', views.resultado),
     path('carrito/', views.carrito),
 ]

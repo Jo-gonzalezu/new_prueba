@@ -6,11 +6,10 @@ from productos.models import Productos
 def login(request):
     return render(request,"views_html/register_new.html")
 
-# para acceder a los parametros get se debe utilizar la siguiente sintaxis
 def resultado(request):
-    #mensaje = f'se ha logeado el usuario {request.GET["correo"]}'
-    llamadabd = Productos.objects.filter(nombre_icontains="plantita_weed")
-    return render(request,"resultado/",{'mensaje':mensaje})
+    productos = Productos.objects.all()
+    contexto = {'listadoProductos':productos}
+    return render(request,"views_html/resultado.html",contexto)
 
 def inicio(request):
     doc_externo = open("static/index.html")
@@ -45,7 +44,7 @@ def fundacion(request):
     return HttpResponse(documento)         
 
 def productos(request):
-    doc_externo = open("static/views_html/productos.html")
+    doc_externo = open("static/views_html/resultado.html")
     plt = Template(doc_externo.read())
     doc_externo.close()
     ctx = Context()       
